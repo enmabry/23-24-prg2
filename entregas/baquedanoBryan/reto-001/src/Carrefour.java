@@ -1,10 +1,11 @@
 import java.util.Scanner;
 
 class Carrefour {
+    
+    final int TOTAL_MINUTES_PER_DAY = 720;
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        final int TOTAL_MINUTES_PER_DAY = 720;
         int minutesWorked = 0;
         final double PROBABILITY = 0.6;
         int waitingLineCostumer = 0;
@@ -103,7 +104,7 @@ class Carrefour {
     }
 
     public static int costumersAtTheEndOfTheDay(int costumersAtTheEnd, int waitingLineCostumer, int minutesWorked) {
-        if (minutesWorked == 720) {
+        if (minutesWorked == TOTAL_MINUTES_PER_DAY) {
             costumersAtTheEnd = waitingLineCostumer;
         }
         return costumersAtTheEnd;

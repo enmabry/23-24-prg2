@@ -53,7 +53,7 @@ class Carrefour {
     }
 
     private static void printCashierStatus(int minutesWorked, int[] waitingLinePerCashier,
-            int[] itemsRemainingPerCashier, int waitingLineCostumer, int zeroCostumersInLine, int costumersAttend,
+            int[] itemsRemainingPerCashier, int waitingLineCostumer, int zeroCostumersInLine, int costumersAttended,
             int totalItemsSold) {
         System.out.println("Minuto " + minutesWorked);
         for (int i = 0; i < waitingLinePerCashier.length; i++) {
@@ -63,13 +63,13 @@ class Carrefour {
         System.out.println("Clientes en espera: " + waitingLineCostumer);
     }
 
-    private static void printDailySummary(int costumersAtTheEnd, int zeroCostumersInLine, int costumersAttend,
+    private static void printDailySummary(int costumersAtTheEnd, int zeroCostumersInLine, int costumersAttended,
             int totalItemsSold) {
 
         System.out.println("-------------------------------------------------------");
         System.out.println("Clientes que quedaron esperando al final del día :" + costumersAtTheEnd);
         System.out.println("Minutos con cola en cero                         :" + zeroCostumersInLine);
-        System.out.println("Clientes atendidos                               :" + costumersAttend);
+        System.out.println("Clientes atendidos                               :" + costumersAttended);
         System.out.println("Total de ítems vendidos durante el día           :" + totalItemsSold);
         System.out.println("-------------------------------------------------------");
     }

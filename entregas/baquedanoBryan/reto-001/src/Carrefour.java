@@ -102,7 +102,7 @@ class Carrefour {
         return costumersAttended;
     }
 
-    public static int costumersAtTheEndOfTheDay(int costumersAtTheEnd, int waitingLineCostumer, int minutesWorked) {
+    private static int costumersAtTheEndOfTheDay(int costumersAtTheEnd, int waitingLineCostumer, int minutesWorked) {
         if (minutesWorked == 720) {
             costumersAtTheEnd = waitingLineCostumer;
         }
